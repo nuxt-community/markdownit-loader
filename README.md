@@ -2,7 +2,7 @@
 
 > Convert Markdown file to HTML using markdown-it.
 
-**See [Markdownit Module](https://github.com/nuxt-community/modules/tree/master/modules/markdownit) for easy integration with [Nuxt.js](https://nuxtjs.org).**
+**See [markdownit Module](https://github.com/nuxt-community/modules/tree/master/modules/markdownit) for easy integration with [Nuxt.js](https://nuxtjs.org).**
 
 ## Installation
 
@@ -16,16 +16,16 @@ npm i @nuxtjs/markdownit-loader --save-dev
 
 
 ## Usage
-[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+See [Using loaders](http://webpack.github.io/docs/using-loaders.html).
 
-`webpack.config.js` file (webpack 2.x):
+`webpack.config.js` file (webpack >= 2.0):
 
 ```javascript
 module.exports = {
   module: {
     rules: [{
       test: /\.md/,
-      loader: 'markdownit-loader'
+      loader: '@nuxtjs/markdownit-loader'
     }]
   }
 };
@@ -44,7 +44,7 @@ module.exports = {
         use: [
           { loader: 'raw-loader' },
           {
-            loader: 'markdownit-loader',
+            loader: '@nuxtjs/markdownit-loader',
             options: {
               // markdown-it config
               preset: 'default',
@@ -75,7 +75,7 @@ module.exports = {
 Or you can customize markdown-it
 
 ```javascript
-var markdown = require('markdown-it')({
+var markdown = require('@nuxtjs/markdown-it')({
   html: true,
   breaks: true
 })
@@ -93,7 +93,7 @@ module.exports = {
         use: [
           { loader: 'raw-loader' },
           {
-            loader: 'markdownit-loader',
+            loader: '@nuxtjs/markdownit-loader',
             options: markdown
           }
         ]
