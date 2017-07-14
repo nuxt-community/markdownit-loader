@@ -2,10 +2,12 @@
 
 > Convert Markdown file to HTML using markdown-it.
 
+**See [Markdownit Module](https://github.com/nuxt-community/modules/tree/master/modules/markdownit) for easy integration with [Nuxt.js](https://nuxtjs.org).**
+
 ## Installation
 
 ```bash
-npm i markdownit-loader --save-dev
+npm i @nuxtjs/markdownit-loader --save-dev
 ```
 
 ## Features
