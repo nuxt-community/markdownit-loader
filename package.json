@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/nuxt-community/markdownit-loader.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "markdown",
     "webpack",
